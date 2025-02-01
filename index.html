@@ -98,16 +98,26 @@
     </div>
 
     <script>
+        // تابع برای رمزنگاری ساده با Base64
+        function encode(str) {
+            return btoa(str); // تبدیل به Base64
+        }
+
+        // تابع برای بررسی ورود
         function checkLogin() {
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
             const errorMessage = document.getElementById('error-message');
 
-            // نام کاربری و رمز عبور صحیح (می‌توانید این مقادیر را تغییر دهید)
-            const correctUsername = 'anbar';
-            const correctPassword = '1303';
+            // نام کاربری و رمز عبور صحیح (رمزنگاری شده با Base64)
+            const correctUsername = 'YW5iYXI='; // anbar
+            const correctPassword = 'MTMwMw=='; // 1303
 
-            if (username === correctUsername && password === correctPassword) {
+            // رمزنگاری اطلاعات وارد شده توسط کاربر
+            const encodedUsername = encode(username);
+            const encodedPassword = encode(password);
+
+            if (encodedUsername === correctUsername && encodedPassword === correctPassword) {
                 document.getElementById('login-container').style.display = 'none';
                 document.getElementById('links-container').style.display = 'block';
             } else {
