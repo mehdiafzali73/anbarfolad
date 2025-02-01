@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>انبار فولاد سازی</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Vazir', Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
@@ -17,40 +17,49 @@
         }
         .container {
             background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             text-align: center;
+            max-width: 500px;
+            width: 100%;
         }
         h1 {
             color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
         }
-        .link-list {
+        .button-list {
             list-style-type: none;
             padding: 0;
         }
-        .link-list li {
+        .button-list li {
             margin: 15px 0;
         }
-        .link-list a {
+        .button-list a {
             text-decoration: none;
-            color: #007BFF;
+            color: #fff;
             font-size: 18px;
-            transition: color 0.3s ease;
+            background-color: #007BFF;
+            padding: 12px 24px;
+            border-radius: 6px;
+            display: block;
+            transition: background-color 0.3s ease;
         }
-        .link-list a:hover {
-            color: #0056b3;
+        .button-list a:hover {
+            background-color: #0056b3;
         }
     </style>
+    <!-- لینک فونت Vazir برای نمایش بهتر متن فارسی -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <div class="container">
-        <h1>صفحه لینک‌های دسترسی به فرمها</h1>
-        <ul class="link-list">
+        <h1>صفحه لینک‌های دسترسی به فرم‌ها</h1>
+        <ul class="button-list">
             <li><a href="https://script.google.com/macros/s/AKfycbygAoe_cPIuMyXfkGeGJ5a9m58k4p2jUyo5MWqF9hng6eNxD-Gy2-w7oEOgwBjV-XOd3w/exec" target="_blank">ثبت ورود کالا</a></li>
-            <li><a href="https://script.google.com/macros/s/AKfycbxB0i0aL8Y8ogAPZe9MZGm9aQ6N0RZmCpmr6-5qeIkRhuVabwytc5YQbYJReK8SOYG85w/exec" target="_blank">انبار گردانی شبانه </a></li>
-            <li><a href="https://script.google.com/macros/s/AKfycbyj2UdL1eGwwj-x3Ywj_DsEnnICLC-JutpphuLplhS-cE6ZwwuK8wFDV_VKeBELoeE/exec" target="_blank">حواله دستی </a></li>
-          
+            <li><a href="https://script.google.com/macros/s/AKfycbxB0i0aL8Y8ogAPZe9MZGm9aQ6N0RZmCpmr6-5qeIkRhuVabwytc5YQbYJReK8SOYG85w/exec" target="_blank">انبار گردانی شبانه</a></li>
+            <li><a href="https://script.google.com/macros/s/AKfycbyj2UdL1eGwwj-x3Ywj_DsEnnICLC-JutpphuLplhS-cE6ZwwuK8wFDV_VKeBELoeE/exec" target="_blank">حواله دستی</a></li>
         </ul>
     </div>
 </body>
