@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه لینک‌های مفید</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .link-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .link-list li {
+            margin: 15px 0;
+        }
+        .link-list a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        .link-list a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>لینک‌های مفید</h1>
+        <ul class="link-list">
+            <li><a href="https://example.com" target="_blank">لینک اول</a></li>
+            <li><a href="https://example.com" target="_blank">لینک دوم</a></li>
+            <li><a href="https://example.com" target="_blank">لینک سوم</a></li>
+            <li><a href="https://example.com" target="_blank">لینک چهارم</a></li>
+        </ul>
+    </div>
+</body>
+</html>
