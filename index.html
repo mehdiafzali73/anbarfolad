@@ -80,13 +80,7 @@
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div class="container" id="login-container">
-        <h1>ورود به سیستم</h1>
-        <input type="text" id="username" placeholder="نام کاربری">
-        <input type="password" id="password" placeholder="رمز عبور">
-        <button onclick="checkLogin()">ورود</button>
-        <div class="error" id="error-message"></div>
-    </div>
+
 
     <div class="container" id="links-container" style="display: none;">
         <h1>صفحه لینک‌های دسترسی به فرم‌ها</h1>
@@ -98,33 +92,6 @@
         </ul>
     </div>
 
-    <script>
-        // تابع برای رمزنگاری ساده با Base64
-        function encode(str) {
-            return btoa(str); // تبدیل به Base64
-        }
 
-        // تابع برای بررسی ورود
-        function checkLogin() {
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-            const errorMessage = document.getElementById('error-message');
-
-            // نام کاربری و رمز عبور صحیح (رمزنگاری شده با Base64)
-            const correctUsername = 'YW5iYXI='; // anbar
-            const correctPassword = 'MTMwMw=='; // 1303
-
-            // رمزنگاری اطلاعات وارد شده توسط کاربر
-            const encodedUsername = encode(username);
-            const encodedPassword = encode(password);
-
-            if (encodedUsername === correctUsername && encodedPassword === correctPassword) {
-                document.getElementById('login-container').style.display = 'none';
-                document.getElementById('links-container').style.display = 'block';
-            } else {
-                errorMessage.textContent = 'نام کاربری یا رمز عبور اشتباه است.';
-            }
-        }
-    </script>
 </body>
 </html>
